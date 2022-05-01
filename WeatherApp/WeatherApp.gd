@@ -1,6 +1,5 @@
 extends Control
 
-var API_KEY = YOUR_API_KEY
 var base_url = 'https://api.openweathermap.org/data/2.5/weather?'
 var city: String
 var state_code: String 
