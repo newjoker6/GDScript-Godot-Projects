@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://BlackJack/Table.jpg" type="Texture" id=1]
+[ext_resource path="res://BlackJack/BlackJack.gd" type="Script" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 612.0
+margin_bottom = 401.0
+texture = ExtResource( 1 )
+stretch_mode = 1
+
+[node name="HitButton" type="Button" parent="."]
+margin_left = 226.0
+margin_top = 338.0
+margin_right = 257.0
+margin_bottom = 358.0
+text = "Hit"
+
+[node name="StandButton" type="Button" parent="."]
+margin_left = 347.0
+margin_top = 338.0
+margin_right = 394.0
+margin_bottom = 358.0
+text = "Stand"
+
+[node name="PlayerLabel" type="Label" parent="."]
+margin_left = 275.0
+margin_top = 341.0
+margin_right = 330.0
+margin_bottom = 355.0
+text = "Total: 21"
+
+[node name="DealerLabel" type="Label" parent="."]
+margin_left = 275.0
+margin_top = 16.0
+margin_right = 330.0
+margin_bottom = 30.0
+text = "Total: ??"
+
+[node name="EndScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="EndScreen"]
+margin_right = 605.0
+margin_bottom = 402.0
+color = Color( 0, 0, 0, 0.694118 )
+
+[node name="Result" type="Label" parent="EndScreen"]
+margin_left = 266.0
+margin_top = 161.0
+margin_right = 330.0
+margin_bottom = 175.0
+text = "YOU WIN!"
