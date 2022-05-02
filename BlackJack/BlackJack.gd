@@ -20,9 +20,9 @@ func connect_signals():
 
 
 func deal_cards():
-	Player_Hand.append(cards[randi() %cards.size()])
-	Dealer_Hand.append(cards[randi() %cards.size()])
-	Player_Hand.append(cards[randi() %cards.size()])
+	hit(Player_Hand)
+	hit(Dealer_Hand)
+	hit(Player_Hand)
 	Dealer_Hand.append("?")
 
 
@@ -70,6 +70,9 @@ func dealer_draw():
 
 func declare_winner():
 	get_node("EndScreen").visible = true
+	get_node("HitButton").disabled = true
+	get_node("StandButton").disabled = true
+
 	if Player_Total > Dealer_Total or Dealer_Total > 21:
 		get_node("EndScreen/Result").text = "You Win"
 		
@@ -78,6 +81,4 @@ func declare_winner():
 		
 	elif Player_Total == Dealer_Total:
 		get_node("EndScreen/Result").text = "Draw"
-		
-	get_node("HitButton").disabled = true
-	get_node("StandButton").disabled = true
+
