@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Price Checker/WebScrape.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.129412, 0.129412, 0.129412, 1 )
+
+[node name="URLentry" type="LineEdit" parent="."]
+margin_left = 128.0
+margin_top = 154.0
+margin_right = 448.0
+margin_bottom = 178.0
+placeholder_text = "item link..."
+
+[node name="PriceLabel" type="Label" parent="."]
+margin_left = 128.0
+margin_top = 209.0
+margin_right = 448.0
+margin_bottom = 230.0
+align = 1
+valign = 1
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 128.0
+margin_top = 183.0
+margin_right = 309.0
+margin_bottom = 203.0
+
+[node name="SearchButton" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 184.0
+margin_right = 446.0
+margin_bottom = 204.0
+text = "Search"
