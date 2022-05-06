@@ -1,0 +1,60 @@
+[gd_scene format=2]
+
+[node name="Item" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -368.0
+custom_constants/separation = 40
+
+[node name="Code" type="Label" parent="."]
+margin_top = 9.0
+margin_right = 65.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 65, 0 )
+text = "32987526"
+clip_text = true
+
+[node name="Description" type="Label" parent="."]
+margin_left = 105.0
+margin_top = 9.0
+margin_right = 170.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 65, 0 )
+text = "iphone10"
+clip_text = true
+
+[node name="Category" type="Label" parent="."]
+margin_left = 210.0
+margin_top = 9.0
+margin_right = 275.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 65, 0 )
+text = "phone"
+clip_text = true
+
+[node name="Brand" type="Label" parent="."]
+margin_left = 315.0
+margin_top = 9.0
+margin_right = 380.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 65, 0 )
+text = "apple"
+clip_text = true
+
+[node name="Stock" type="Label" parent="."]
+margin_left = 420.0
+margin_top = 9.0
+margin_right = 485.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 65, 0 )
+text = "20"
+clip_text = true
+
+[node name="Hold" type="Label" parent="."]
+margin_left = 525.0
+margin_top = 9.0
+margin_right = 590.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 65, 0 )
+text = "5"
+clip_text = true
