@@ -1,9 +1,9 @@
 extends Control
 
 
-var API_KEY = 'qkvZbz1nYAFRNbk0AOHM6qAvohFkcPc3'
+var API_KEY = 'YOUR API KEY'
 var url_base = 'http://www.mapquestapi.com/directions/v2/route'
-var city = 'Surrey+BC+CA'
+var city = 'city+state+country'
 var from_location = ''
 var to_location = ''
 var url = '%s?key=%s&from=%s+%s&to=%s+%s' %[url_base, API_KEY, from_location, city, to_location, city]
